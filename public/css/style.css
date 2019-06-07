@@ -1,0 +1,146 @@
+html,body{height:100%;}
+	body{margin:0; padding:0;background: #e2e2e0; color: #666;font: 16px/28px;font-family: 'Open Sans', sans-serif; line-height:22px;}
+
+
+	#header{position:fixed; top:50%;left:15px;z-index:80;float:left;margin-top:-325px;width:155px;background:#21aabd;}
+
+		h1{
+			position: relative;
+			z-index: 2;
+			font-size: 11.6875rem;
+			line-height: 1;
+			color: rgba(65,65,65,0.1);
+			margin-bottom: 100px;
+		}
+
+		#logo{display:block;float:left;padding:10px; border-bottom: 2px solid #e2e2e0; color: #fff; text-decoration:none;text-transform:uppercase;font-weight:normal;font-size: 20px;font-family: oswald; line-height: 24px; }
+		.menu {float:left;padding:0;width:100%; list-style-type:none;}
+		.menu li a{ display: block;padding: 3px 10px;color: #fff;text-decoration:none; text-transform:uppercase; font: 14px;font-family: oswald;}
+		.menu li a:hover{background:#666;}
+		.selected{background: #999; color:#fff!important;}
+		.selected:hover{background: #999!important;}
+
+	#container {
+		padding: 30px 0px 0px 0px;
+		text-align: center;
+	}
+
+	.slider.mCustomScrollbar._mCS_1 {
+		text-align: left;
+	}
+
+	.draggable-label {
+		padding-left: 75px;
+		font-size: 12px;
+	}
+
+	.slider {
+		top: 50%;
+		overflow: auto;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		margin-top: 0;
+		width: 100%;
+		height: auto;
+		padding-left: 75px;
+	}
+
+		.slider.toggle_width{width:70%;}
+		.slider .my_container{overflow:hidden;}
+
+		.slider .my_container .line-element {
+			position: relative;
+			z-index: 10;
+			display: block;
+			float: left;
+			margin-right: 5vw;
+			width: 20vw;
+			height: auto;
+			background: transparent;
+			margin-bottom: 35px;
+		}
+
+
+		.slider .my_container span{position:absolute; bottom:0;left:0; }
+		.slider .my_container img:first-child{margin-left:0;}
+		.slider .my_container img:last-child{margin-right:0;}
+
+
+	.cont-page{padding:20px;}
+
+	h2,h3{
+		font-size: calc(1.2375rem + 1.05556vw);
+		color: #e31019;
+		margin-bottom: 28px;
+	}
+
+		.cop{float:left; margin-right:20px; height:560px;}
+
+	/* Button Responsive Menu*/
+	.btn-responsive-menu{position: absolute; top:0; right:0;display:none;margin:  15px 10px 0 0; padding:5px;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;background:#333;color: #ffffff;text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);cursor:pointer;}
+	.icon-bar 			{display: block;margin:5px;width: 18px;height: 2px;-webkit-border-radius: 1px;-moz-border-radius: 1px;border-radius: 1px;background-color: #f5f5f5;-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);}
+	.show{display:block!important;}
+
+	.mCSB_horizontal .mCSB_scrollTools .mCSB_draggerContainer {
+		height: 100%;
+		width: 25vw;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		overflow: hidden;
+		margin: 0 auto;
+	}
+
+
+	.mCSB_horizontal .mCSB_scrollTools .mCSB_dragger {
+		position: absolute;
+		bottom: 0px;
+		left: 0;
+		width: 45px !important;
+	}
+
+	.mCSB_horizontal .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+		width: 100%;
+		height: 10px;
+		margin: 3px auto;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 0px;
+	}
+
+
+@media (max-width: 980px) {
+
+	#header{position: relative;top:0;left:0;margin: 0;width:100%;}
+
+	.menu li {float:left;}
+
+	.slider {top:130px;overflow: visible;margin:0px;width:100%;height: auto;}
+
+	.slider .my_container{float:left;overflow:visible;width:100%;}
+
+	.slider .mCSB_container{width:100%!important;}
+
+	.slider .my_container .line-element{float:left;margin:0px 0 30px 0;width:100%;height: auto;}
+
+	.slider .my_container .line-element img{padding-bottom: 2%;width:50%;height: auto;}
+
+	.cont-page{padding:3%;}
+
+}
+
+@media (max-width: 480px) {
+
+	#logo {padding:20px 10px 20px 10px;border:none;}
+
+	.btn-responsive-menu {display: block;}
+
+	.menu {display:none;}
+
+	.menu li {float: none;}
+
+	.slider {top:70px;
+
+
+}
